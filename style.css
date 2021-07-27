@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+    scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* -------- Container End -------- */
+.m-container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .m-container { max-width: 540px;}
+}
+@media (min-width: 768px) {
+  .m-container { max-width: 720px; }
+}
+@media (min-width: 992px) {
+  .m-container { max-width: 960px; }
+}
+@media (min-width: 1200px) {
+  .m-container { max-width: 1024px; }
+}
+@media (min-width: 1400px) {
+  .m-container { max-width: 1320px; }
+}
+/* -------- Container End -------- */
+
+/* -------- Row Start -------- */
+.m-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+/* -------- Row End -------- */
+
+/* -------- Column Start -------- */
+.m-row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.m-col-s {
+    flex: 1 0 0%;
+}
+
+.m-gutter {
+    --bs-gutter-x: 2rem;
+    --bs-gutter-y: 2rem;
+}
+
+@media (min-width: 576px) {
+  .m-col{
+    flex: 0 0 auto;
+    width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .m-col{
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px) {
+ 
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+  
+}
+
+
+/* -------- Column End -------- */
